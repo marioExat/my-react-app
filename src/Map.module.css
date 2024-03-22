@@ -1,0 +1,22 @@
+/*  Map.module.css */
+
+/* Another advantage of using CSS Modules is that you can compose 
+a new class by inheriting from other classes that you've written. 
+This way, you'll be able to reuse CSS code that you've written 
+previously, like this: */
+
+.MediumParagraph {
+    font-size: 20px;
+}
+
+.BlueParagraph {
+    composes: MediumParagraph;
+    color: blue;
+    text-align: left;
+}
+
+.GreenList {
+    composes: MediumParagraph;
+    color: green;
+    text-align: left;
+}
